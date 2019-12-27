@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+}
+
+.winner,
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
